@@ -17,7 +17,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchData = () => {
-      fetch("http://localhost:5000/api/wallets")
+      fetch("https://smart-money-tracker-production-58ef.up.railway.app/api/wallets")
         .then((res) => res.json())
         .then((data) => setWallets(data))
         .catch((err) => console.log(err));
